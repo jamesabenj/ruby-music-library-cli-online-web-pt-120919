@@ -31,4 +31,5 @@ class Artist
     self.songs << song
     end
   end
+
 end
