@@ -5,7 +5,6 @@ class Song
 
   def initialize(name)
     @name = name
-    @@all << self
   end
 
   def self.all
@@ -13,6 +12,10 @@ class Song
   end
 
   def self.destroy_all
-    @@all.clear
+    @@all.cleacr
+  end
+
+  def save
+    @@all << self
   end
 end
