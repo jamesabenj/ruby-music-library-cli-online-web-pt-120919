@@ -17,7 +17,8 @@ class Genre
 
   def create(name)
     genre = Genre.new(name)
-    genre.save 
+    genre.save
     genre
   end
+
 end
