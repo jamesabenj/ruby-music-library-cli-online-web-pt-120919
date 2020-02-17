@@ -3,7 +3,7 @@ class Song
 
   @@all =[]
 
-  def initialize(name, artist = nil)
+  def initialize(name, artist = nil, genre)
     @artist = artist
     @name = name
   end
@@ -27,7 +27,6 @@ class Song
   end
 
   def artist=(artist)
-    self.artist = nil
     artist.add_song(self)
   end
 end
