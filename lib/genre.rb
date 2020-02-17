@@ -21,4 +21,8 @@ class Genre
     genre
   end
 
+  def self.destroy_all
+    @@all.clear
+  end
+
 end
